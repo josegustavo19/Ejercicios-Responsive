@@ -1,0 +1,83 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clearix{
+    float: none;
+    clear: both;
+}
+#container{
+    width: 1000px;
+    background: blueviolet;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+/*     margin-top: 40px;
+    margin-bottom: 40px; */
+}
+header{
+    width: 100%;
+    height: 150px;
+    background: lightblue;
+    color: #333;
+    line-height: 150px;
+    text-align: center;
+}
+aside{
+    width: 25%;
+    min-height: 700px;
+    float: left;
+    background: #ccc;
+    text-align: 700px;
+    line-height: 700px;
+}
+#articles{
+    width: 75%;
+    min-height: 700px;
+    float: left;
+    background-color: lemonchiffon;
+}
+#articles article{
+    width: 30%;
+    height: 150px;
+    background: rgb(35, 86, 69);
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+/* responsive */
+@media (max-width: 888px){ /* desde la anchura 0px hasta la anchura 888px se ejecutarán los sigueintes estilos */
+    #articles article{
+        width: 40%;
+        background: orange;
+    }
+}
+@media (max-width: 632px){
+    #container{
+        overflow: hidden;
+    }
+    #articles{
+        width: 100%;
+    }
+
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 90%;
+        padding: 19%;
+    }
+    #articles article{
+        width: 90%;
+        background: rgb(53, 35, 29);
+    }
+}
+@media (max-width: 554px){
+    #articles article{
+        width: 90%;
+        background: orangered;
+    }
+}
